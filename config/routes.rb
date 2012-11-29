@@ -16,6 +16,8 @@ SampleApp::Application.routes.draw do
 
   match "/signout", to: 'sessions#destroy', via: :delete
 
+  match "/users", to: 'users#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
